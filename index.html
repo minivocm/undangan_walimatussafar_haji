@@ -779,7 +779,9 @@
 
       if (kepada) {
         // ganti underscore jadi spasi
-        kepada = kepada.replace(/_/g, " ");
+        kepada = decodeURIComponent(kepada)
+          .replace(/_/g, " ") // underscore → spasi
+          .replace(/\|/g, "<br>"); // | → enter
         document.getElementById("namaTamu").innerHTML =
           '<p>Kepada Yth. </p><h4 class="fw-bold text-break">' +
           kepada +
