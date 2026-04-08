@@ -1,0 +1,39 @@
+/* CONTAINER */
+.simply-countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ITEM */
+.simply-countdown > .simply-section {
+  width: clamp(40px, 18vw, 100px);
+  height: clamp(40px, 18vw, 100px);
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 5px;
+
+  /* Acrylic Effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.6rem;
+}
+
