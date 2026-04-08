@@ -727,11 +727,11 @@
         if (!song) return;
 
         if (isPlaying) {
-          song.pause();
+          song.muted = true;
           audioIcon.classList.remove("bi-disc");
           audioIcon.classList.add("bi-pause-circle");
         } else {
-          song.play();
+          song.muted = false;
           audioIcon.classList.add("bi-disc");
           audioIcon.classList.remove("bi-pause-circle");
         }
