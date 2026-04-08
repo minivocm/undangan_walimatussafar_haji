@@ -61,8 +61,8 @@
         <br />
         <br />
         <br />
-        <p>Kepada :</p>
-        <h4 id="namaTamu"></h4>
+        <!-- <p>Kepada :</p> -->
+        <div id="namaTamu"></div>
         <!-- <div class="simply-countdown"></div> -->
         <a
           href="#home"
@@ -773,7 +773,9 @@
         // ganti underscore jadi spasi
         kepada = kepada.replace(/_/g, " ");
         document.getElementById("namaTamu").innerHTML =
-          "Kepada Yth. <br/>" + kepada + "<br/> di Tempat";
+          '<p>Kepada Yth.</p><h3 class="fw-bold">' +
+          kepada +
+          "</h3><p>di Tempat</p>";
       }
     </script>
   </body>
